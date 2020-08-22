@@ -1,0 +1,20 @@
+/* 
+    Document   : Sample
+    Created on : 30/08/2012, 18:35:57
+    Author     : Jonas Alessi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+.background {
+     -fx-background-color: black;
+}
+
+.middle {
+    -fx-background-color:white;
+    -fx-border-radius: 10.0;
+    -fx-background-radius: 10.0;
+}
+

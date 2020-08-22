@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="main" prefHeight="787.0" prefWidth="1146.0" styleClass="background" xmlns:fx="http://javafx.com/fxml" fx:controller="com.alessi.controllers.PrimaryController">
+  <children>
+    <Pane fx:id="contentPanel" layoutX="14.0" layoutY="14.0" onMouseClicked="#actionMarkPoint" prefHeight="727.0" prefWidth="1118.0" styleClass="middle">
+      <effect>
+        <InnerShadow>
+          <color>
+            <Color blue="0.875" green="0.875" red="0.875"  />
+          </color>
+        </InnerShadow>
+      </effect>
+    </Pane>
+    <Button layoutX="278.0" layoutY="755.0" mnemonicParsing="false" onAction="#actionCalc" prefWidth="103.0" text="Calculate" />
+    <Button layoutX="553.0" layoutY="755.0" mnemonicParsing="false" onAction="#actionClear" prefWidth="103.0" text="Clean" />
+    <Label fx:id="lbTotal" layoutX="14.0" layoutY="760.0" text="Total: 0" textFill="$x1" />
+    <Label layoutX="678.0" layoutY="760.0" text="Population:" textFill="WHITE" />
+    <TextField fx:id="txtPopulacao" layoutX="759.0" layoutY="754.0" prefWidth="72.0" promptText="100" />
+    <Label layoutX="841.0" layoutY="760.0" text="Percentage mutation:" textFill="WHITE" />
+    <TextField fx:id="txtPercentualMut" layoutX="985.0" layoutY="754.0" prefWidth="61.0" promptText="0.20" />
+  </children>
+  <stylesheets>
+    <URL value="@primary.css" />
+  </stylesheets>
+</AnchorPane>
